@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kuntur Soporte - Artículo Único</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+  </head>
+  <body>
+    <div id="app"></div> 
+    <script>
+      window.$docsify = {
+        name: 'Kuntur Soporte',
+        repo: 'https://github.com/dalonsomw/kunturnet', // Reemplaza con tu repositorio
+        
+        // 1. CONFIGURACIÓN CLAVE PARA ARTÍCULO ÚNICO:
+        loadSidebar: false, // Desactivamos la carga de _sidebar.md
+        homepage: 'content.md', // Le decimos a Docsify que cargue este archivo como la página principal
+        
+        // 2. CONFIGURACIÓN CLAVE PARA TOC COMO SIDEBAR:
+        auto2Sidebar: true, // Esto hace que el menú lateral se genere automáticamente a partir de los encabezados (h1, h2, h3) de 'content.md'
+        subMaxLevel: 3, // Nivel máximo de encabezados a mostrar en la TOC (hasta h3)
+
+        // Otras configuraciones
+        search: 'auto',
+        themeColor: '#0066cc',
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  </body>
+</html>
